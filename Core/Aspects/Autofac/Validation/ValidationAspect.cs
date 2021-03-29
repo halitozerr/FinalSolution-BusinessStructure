@@ -21,6 +21,7 @@ namespace Core.Aspects.Autofac.Validation
 
             _validatorType = validatorType;
         }
+        
         protected override void OnBefore(IInvocation invocation)
         {
             var validator = (IValidator)Activator.CreateInstance(_validatorType);
