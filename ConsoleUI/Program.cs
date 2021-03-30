@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ProductManager categoryManager = new ProductManager(new EfProductDal());
+            ProductManager categoryManager = new ProductManager(new EfProductDal(),new CategoryManager(new EfCategoryDal()));
             Product product = new Product { CategoryId = 2, ProductName = "Ozztech Ayakkabı", UnitPrice = 1500, UnitsInStock = 132 };
 
             foreach (var item in categoryManager.GetByUnitPrice(15,20).Data)
