@@ -17,5 +17,6 @@
         public static string SuccessfulLogin = "Giriş başarılı.";
         public static string UserAlreadyExists = "Bu kullanıcı daha önceden oluşturulmuş.";
         public static string AccessTokenCreated = "Erişim tokenı oluşturuldu.";
+        public static string unauthorizedAccess ="Bu işlemi gerçekleştirebilmek için yetkiniz bulunmamaktadır.";
     }
 }
